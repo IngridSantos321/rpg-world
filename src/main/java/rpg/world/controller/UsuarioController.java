@@ -20,4 +20,9 @@ public class UsuarioController {
       return usuarioRepository.save(usuario);
     }
 
+    @GetMapping
+    public List<Usuario> buscarUsuarios(){
+        return usuarioRepository.findAll();
+    }
+
 }
